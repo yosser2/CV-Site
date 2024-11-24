@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Yosser Balti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="title">Yosser Balti</h1>
+            <p class="subtitle">Développeuse FullStack | Étudiante en Systèmes d'Information</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#education">Éducation</a></li>
+                    <li><a href="#experience">Expériences</a></li>
+                    <li><a href="#associative">Vie Associative</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section À propos -->
+        <section id="about" class="section">
+            <h2 class="section-title">À propos</h2>
+            <div class="about-container">
+                <img src="images/Yosser.jpg" alt="Photo de profil" class="about-photo">
+                <p class="about-description">
+                    Étudiante en 2ème année de licence Business Information Systems à l'ESPRIT
+                Business School et developpeuse FullStack, je cherche un stage de fin
+                d'études pour renforcer mes capacités techniques et stratégiques. Passionnée
+                et motivée, je souhaite intégrer votre équipe dynamique pour relever ensemble
+                des défis innovants et apporter une réelle valeur ajoutée. Je suis ouverte et
+                adaptable, prenant plaisir aux nouvelles technologies et aux nouvelles connaissances.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section Éducation -->
+        <section id="education" class="section">
+            <h2 class="section-title">Éducation</h2>
+            <div class="education-container">
+                <div class="education-item">
+                    <h3>Licence en Business Information Systems</h3>
+                    <p><strong>2025</strong> - ESPRIT</p>
+                </div>
+                <div class="education-item">
+                    <h3>Certification FullStack</h3>
+                    <p><strong>2023</strong> - GoMyCode</p>
+                </div>
+                <div class="education-item">
+                    <h3>Baccalauréat Économie et Gestion</h3>
+                    <p><strong>2021</strong> - Lycée Mohammed Atia Khaznadar</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Expériences -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Expériences Professionnelles</h2>
+            <div class="experience-container">
+                <div class="experience-item">
+                    <h3>Agent Call 1</h3>
+                    <p><strong>Mai 2024 - Sept. 2024</strong> - Baba Call, Tunis</p>
+                    <ul>
+                        <li>Atteinte systématique des objectifs de vente grâce à des stratégies efficaces.</li>
+                        <li>Gestion professionnelle des appels entrants.</li>
+                        <li>Persuasion réussie des prospects pour l’adoption de services.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Enseignante d'Anglais</h3>
+                    <p><strong>Sept. 2023 - Oct. 2023</strong> - AIESEC, Bursa (Turquie)</p>
+                    <ul>
+                        <li>Enseigné l’anglais dans une école privée.</li>
+                        <li>Renforcé mes compétences en communication interculturelle et pédagogie.</li>
+                        <li>Adaptation à un environnement international dynamique.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Vie Associative -->
+        <section id="associative" class="section">
+            <h2 class="section-title">Vie Associative</h2>
+            <div class="associative-container">
+                <div class="associative-item">
+                    <h3>Secrétaire Générale</h3>
+                    <p><strong>2024 - Présent</strong> - Jeune Chambre Internationale (JCI), Charguia, Tunis</p>
+                    <ul>
+                        <li>Coordination des activités et des projets stratégiques de l'organisation.</li>
+                        <li>Supervision de la communication interne et des relations publiques.</li>
+                        <li>Représentation officielle de la JCI auprès des partenaires et événements locaux.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Compétences</h2>
+            <div class="skills-container">
+                <div class="skill">HTML & CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React.js</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">MongoDB</div>
+                <div class="skill">Postman</div>
+            </div>
+        </section>
+
+        <!-- Section Portfolio -->
+        <section id="portfolio" class="section">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <img src="images/project1.jpg" alt="Projet 1">
+                    <h3>Movies Site</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project2.jpg" alt="Projet 2">
+                    <h3>Application E-commerce</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contactez-moi</h2>
+            <form onsubmit="return validateForm()">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Yosser Balti. Créé avec ❤️ et passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
